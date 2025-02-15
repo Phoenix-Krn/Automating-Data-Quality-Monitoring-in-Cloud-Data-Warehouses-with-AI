@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Quality Monitoring</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Data Quality Monitoring Dashboard</h1>
+    <canvas id="salesChart"></canvas>
+    <script>
+        var ctx = document.getElementById('salesChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'line',
+            data: { labels: ['Jan', 'Feb', 'Mar'], datasets: [{ data: [200, 300, 250] }] },
+            options: { responsive: true }
+        });
+    </script>
+</body>
+</html>
