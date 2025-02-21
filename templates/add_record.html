@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Transaction</title>
+</head>
+<body>
+    <h2>Add New Transaction</h2>
+    <form method="POST">
+        <label>Transaction ID:</label>
+        <input type="text" name="transaction_id" required><br>
+
+        <label>Amount:</label>
+        <input type="number" name="amount" required><br>
+
+        <label>Status:</label>
+        <select name="status">
+            <option value="Legitimate">Legitimate</option>
+            <option value="Fraudulent">Fraudulent</option>
+        </select><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <a href="/">Back to Dashboard</a>
+</body>
+</html>
